@@ -4,4 +4,4 @@ Description: This application provides the weather information for different U.S
 Deployed Site: https://bduran04.github.io/Weather_dashboard/
 
 
-![This is the gif showing the weather dashboard application](/assets/weather_app.gif.icloud)
+![This is the gif showing the weather dashboard application](/assets/weather_app.png)
