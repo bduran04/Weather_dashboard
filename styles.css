@@ -1,0 +1,123 @@
+body {
+    margin: 0 10px;
+    padding: 0;
+}
+
+.weather-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    padding: 0;
+    margin: 0;
+}
+
+.weather-nav{
+    margin: 16px;
+    padding: 16px;
+    border: 1px solid grey;
+}
+.city-group {
+    display: grid;
+    grid-template-rows: repeat(8, 40px);
+    row-gap: 4px;
+}
+
+.city-item {
+    padding: 4px;
+}
+
+.city-item:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.weather-details {
+    margin: 16px;
+    padding: 16px;
+    border: 1px solid grey;
+    display: grid;
+    grid-template-rows: 300px 50px 1fr;
+    row-gap: 16px;
+}
+
+.current-weather {
+    padding: 4px;
+}
+
+.five-day-item {
+    padding: 4px;
+    height: 175px;
+}
+
+.five-day-forecast-container {
+    grid-gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.good-uv {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 3px;
+    background-color: lightgreen;
+}
+
+.moderate-uv {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 3px;
+    background-color: lightgoldenrodyellow;
+}
+
+.bad-uv {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 3px;
+    background-color: lightcoral;
+}
+
+.extremely-bad-uv {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 3px;
+    background-color: rgb(26, 31, 54);
+    color: rgb(193, 201, 210);
+}
+
+.medium-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.large-icon {
+    height: 32px;
+    width: 32px;
+}
+
+.search-input {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 32px;
+}
+
+.search-button {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    animation: click 0.6s ease-in-out;
+}
+
+@keyframes click {
+    0% {transform: scale(1)}
+    25% {transform: scale(0.95)}
+    50% {transform: scale(0.95)}
+    75% {transform: scale(0.95)}
+    100% {transform: scale(1)}
+}
